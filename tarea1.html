@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paseo de Perros</title>
+    <link rel="stylesheet" href="tarea1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/logo3.png" alt="Logo"> 
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="https://wa.me/5493874457090" target="_blank">CONTACTO</a></li>
+                <li><a href="#">TESTIMONIOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mainbody">
+        <h1 class="title">PASEO DE PERROS</h1>
+        <h2 class="subtitle">CLIENTES</h2>
+        <!-- Contenedor general de la sección del carrusel -->
+        <div class="carousel-section">
+            <div class="carousel">
+                <div class="img-lateral">
+                    <img src="imagenes/dog1.jpeg" alt="Perro 1"> 
+                </div>
+                <div class="img-central">
+                    <img src="imagenes/dog2.jpeg" alt="Perro 2"> 
+                </div>
+                <div class="img-lateral">
+                    <img src="imagenes/dog3.jpeg" alt="Perro 3"> 
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- Boton de whatsapp-->
+    
+    <!-- SOBRE MI-->
+     <div class="about-me">
+        <h4 class="am-title"> SOBRE MI</h4>
+        <p>Soy un estudiante de ingenieria amante de los animales. He cuidado a mas de 5 perros en toda mi vida, mis favoritos son los perros grandes como los golden y labradores. Soy una persona muy activa y responsable y atenta a las necesidades del animal como el dueño.</p>
+        <img>
+     </div>
+
+    <!-- TESTIMONIOS-->
+
+    <div class="formulario-seccion">
+    <form class="formulario-minimalista" action="https://formspree.io/f/xzepwrgb" method="POST">
+         <h3 class="formheader">¡REGÍSTRESE PARA OBTENER PASEOS PERSONALIZADOS!</h3>
+        
+        <!-- Campo 1: Nombre -->
+        <div class="campo-form">
+            <label>NOMBRE:</label>
+            <input type="text" name="Nombre" required>
+        </div>
+
+        <!-- Campo 2: Email -->
+        <div class="campo-form">
+            <label>EMAIL:</label>
+            <input type="email" name="Email" required>
+        </div>
+
+        <!-- Campo 3: Mensaje -->
+        <div class="campo-form">
+            <label>MENSAJE:</label>
+            <textarea name="mensaje" required></textarea>
+        </div>
+
+        <button class="boton-full" type="submit">ENVIAR</button>
+    </form>
+</div>
+    <footer>
+        Atención y Cuidados Personalizados
+    </footer>
+</body>
+</html>

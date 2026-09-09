@@ -1,0 +1,233 @@
+/* --- RESET CSS --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif; /* Fuente por defecto para todo el cuerpo */
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+header {
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 15px; /* Agregamos un poco de padding al enlace para el hover */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #a8a8a8;
+    color: black;
+}
+
+/* --- CUERPO PRINCIPAL --- */
+.mainbody {
+    background-color: #778899;
+    color: white;
+    padding-bottom: 50px; /* Espacio abajo antes del formulario */
+}
+
+.title {
+    background-color: transparent; /* Eliminamos el bloque gris de fondo */
+    color: white; 
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente clásica y elegante */
+    font-size: 70px; /* Tamaño grande */
+    font-weight: normal; /* Le quitamos el grosor extremo para que se vea refinado */
+    letter-spacing: 4px; /* Separamos bastante las letras, clave en este estilo */
+    padding-top: 60px; /* Aire por arriba */
+    margin-bottom: 10px; /* Lo dejamos cerquita del subtítulo */
+    text-shadow: none; /* Eliminamos la sombra pesada */
+}
+
+.subtitle {
+  text-align: center;
+    font-family: 'Arial', sans-serif; /* Letra sencilla para contrastar con el título */
+    font-size: 20px; /* Letra mucho más pequeña */
+    color: #c4c4c4; /* Un gris claro para que no compita en atención con el título principal */
+    font-weight: normal;
+    letter-spacing: 2px; /* Un poco de separación */
+    
+    /* LA SOLUCIÓN A TU PREGUNTA: */
+    margin-bottom: 70px; /* Esto crea el "aire" y aleja el carrusel hacia abajo */
+    
+}
+
+/* --- CARRUSEL --- */
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.carousel img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra un poco más fuerte para el fondo oscuro */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img-central img {
+    transform: scale(1.15); /* Agrandamos solo la imagen central */
+    position: relative;
+    z-index: 2;
+}
+
+.img-lateral img {
+    opacity: 0.7; /* Oscurecemos las laterales */
+}
+
+.indicadores {
+    display: flex;
+    gap: 15px;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.punto.activo {
+    background-color: white;
+}
+
+/* --- FORMULARIO Y FOOTER --- */
+.formulario-seccion {
+    padding: 60px 20px;
+    background-color: #fafafa; /* Un gris casi blanco, muy elegante */
+    display: flex;
+    justify-content: center; /* Centra el formulario en la pantalla */
+}
+
+.formulario-minimalista {
+    background-color: white;
+    width: 100%;
+    max-width: 600px; /* Evita que sea gigantesco en pantallas grandes */
+    padding: 40px;
+    box-sizing: border-box;
+    /* Eliminamos el border: 2px solid black para un look más limpio */
+   
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* CAMPOS */
+.campo-form {
+    display: flex;
+    flex-direction: column; /* Apila el label arriba del input */
+    margin-bottom: 20px;
+    text-align: left; /* Alinea los textos a la izquierda */
+}
+
+.campo-form label {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+.campo-form input:focus, 
+.campo-form textarea:focus {
+    outline: none;
+    border-color: black; /* El borde se oscurece al escribir */
+}
+
+.campo-form input, 
+.campo-form textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 15px; /* Le da mucha altura y aire interior */
+    border: 1px solid #e0e0e0; /* Borde gris muy clarito */
+    border-radius: 4px; /* Esquinas apenas redondeadas */
+    font-family: inherit; /* Hereda la fuente de la página */
+    font-size: 16px;
+    box-sizing: border-box; /* Evita que el padding rompa el ancho */
+    transition: border-color 0.3s ease;
+}
+
+.formheader{
+    
+   text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+
+.boton-full {
+   background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%; /* En lugar de usar un padding enorme de 200px */
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    
+
+}
+.boton-full:hover{
+    background-color: #333; /* Un negro más claro al pasar el mouse */
+}
+
